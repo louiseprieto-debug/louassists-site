@@ -36,12 +36,14 @@
 .la__menu a:hover{color:#000!important}
 /* hero */
 .la__hero{position:relative;background:var(--cream) center/cover no-repeat;display:flex;flex-direction:column}
-.la__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(252,250,246,.72),rgba(252,250,246,.5) 60%,rgba(252,250,246,.75))}
+.la__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(252,250,246,.96) 0%,rgba(252,250,246,.9) 45%,rgba(252,250,246,.55) 75%,rgba(252,250,246,.35) 100%)}
 .la__hero-in{position:relative;z-index:1;flex:1;display:flex;align-items:center;padding:96px 0 104px}
 .la__hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:72px;align-items:center}
-.la__hero p.la__eyebrow{font-size:13px;font-weight:500;color:var(--tan);margin:0 0 26px;line-height:1.6}
+.la__hero p.la__eyebrow{font-size:14px;font-weight:600;color:#8A6A35;margin:0 0 26px;line-height:1.6;display:flex;align-items:center;gap:14px}.la__hero p.la__eyebrow:before{content:"";width:36px;height:2px;background:var(--gold);flex:none}
+.la .la__index h2{color:#8A6A35!important}
+@media (max-width:860px){.la__hero:before{background:rgba(252,250,246,.9)}}
 .la__hero-note{font-size:17px!important;font-weight:300!important;color:var(--text)!important;margin-top:28px!important;max-width:520px!important;line-height:1.75!important}
-.la__index{background:rgba(252,250,246,.88);border:1px solid var(--tan);padding:40px 40px 34px;position:relative}
+.la__index{background:rgba(252,250,246,.95);border:1px solid var(--tan);padding:40px 40px 34px;position:relative}
 .la__index:before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}
 .la__index h2{font-size:15px;font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:14px}
 .la__index ol{list-style:none;margin:0;padding:0;counter-reset:i}
