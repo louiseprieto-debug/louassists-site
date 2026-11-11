@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Lou Assists</title>
+<meta name="description" content="Tell me what's on your plate. I reply within one working day.">
+<meta property="og:title" content="Contact — Lou Assists">
+<meta property="og:description" content="Tell me what's on your plate. I reply within one working day.">
+<meta property="og:image" content="https://louassists.com/images/og.png">
+<meta property="og:url" content="https://louassists.com/contact.html">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.la{--bg:#FCFAF6;--cream:#F3EDE3;--sand:#EDE5D8;--ink:#1A1A1A;--text:#3B3935;--gold:#DDB053;--tan:#B9A27E;--line:#E3DACB;
+ font-family:'Poppins',sans-serif;font-weight:300;color:var(--text);font-size:17px;line-height:1.75;text-align:left;background:var(--bg);-webkit-font-smoothing:antialiased}
+.la *{box-sizing:border-box}
+.la a{text-decoration:none!important}
+.la h1,.la h2,.la h3{font-family:'Bodoni Moda',serif;font-weight:500;font-optical-sizing:none;font-variation-settings:'opsz' 11;color:#111;margin:0}
+.la p{margin:0}
+.la strong{font-weight:500;color:var(--ink)}
+.la__wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+/* nav */
+.la__nav{position:relative;z-index:2}
+.la__navin{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:30px 0 22px;border-bottom:1px solid #6E6A64}
+.la__logo{display:flex;align-items:flex-end;gap:12px;color:var(--ink)!important;line-height:1}
+.la__mono{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;font-size:54px;line-height:.8;letter-spacing:0}
+.la__name{display:block;font-family:'Poppins',sans-serif;font-weight:500;font-size:14px;letter-spacing:.5em;line-height:1;padding-bottom:7px;border-bottom:2px solid var(--gold);width:max-content;padding-right:2px}
+.la__sub{display:block;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;margin-top:8px;color:var(--text);line-height:1}
+.la__menu{display:flex;gap:42px;align-items:center}
+.la__menu a{color:var(--ink)!important;font-size:16px;font-weight:400;position:relative}
+.la__menu a.is-on{font-weight:600}
+.la__menu a.is-on:after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:-26px;width:44px;height:4px;background:var(--gold)}
+.la__menu a:hover{color:#000!important}
+/* hero */
+.la__hero{position:relative;background:var(--cream) center/cover no-repeat;display:flex;flex-direction:column}
+.la__hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(252,250,246,.72),rgba(252,250,246,.5) 60%,rgba(252,250,246,.75))}
+.la__hero-in{position:relative;z-index:1;flex:1;display:flex;align-items:center;padding:96px 0 104px}
+.la__hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:72px;align-items:center}
+.la__hero p.la__eyebrow{font-size:13px;font-weight:500;color:var(--tan);margin:0 0 26px;line-height:1.6}
+.la__hero-note{font-size:17px!important;font-weight:300!important;color:var(--text)!important;margin-top:28px!important;max-width:520px!important;line-height:1.75!important}
+.la__index{background:rgba(252,250,246,.88);border:1px solid var(--tan);padding:40px 40px 34px;position:relative}
+.la__index:before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}
+.la__index h2{font-size:15px;font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:14px}
+.la__index ol{list-style:none;margin:0;padding:0;counter-reset:i}
+.la__index li{counter-increment:i;display:flex;gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line);font-family:'Bodoni Moda',serif;font-size:21px;color:var(--ink);line-height:1.3}
+.la__index li:before{content:"0" counter(i);font-size:15px;color:var(--gold);min-width:22px}
+.la__index li span{display:block;font-family:'Poppins',sans-serif;font-size:13px;color:var(--text);margin-top:4px;letter-spacing:.02em}
+.la__index p{font-size:13px!important;letter-spacing:.16em;text-transform:uppercase;margin-top:22px!important;color:var(--text)}
+.la__hero-in .la__wrap{width:100%}
+.la__hero h1{font-size:56px;line-height:1.12;letter-spacing:.045em;text-transform:uppercase;max-width:760px}
+.la__hero p{font-size:24px;font-weight:400;color:var(--ink);margin-top:22px;max-width:640px;line-height:1.45}
+.la__hero .la__btn{margin-top:42px}
+/* blocks */
+.la__btn{display:inline-block;border:2px solid var(--tan);color:var(--ink)!important;background:transparent;font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:20px 54px;transition:all .25s}
+.la__btn:hover{background:var(--ink);border-color:var(--ink);color:#fff!important}
+.la__rule{width:84px;height:3px;background:var(--gold);margin:26px 0 40px}
+.la__eyebrow{font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--tan)}
+.la__sec{padding:110px 0}
+.la__sec--cream{background:var(--cream)}
+.la__title{font-size:42px;line-height:1.2;letter-spacing:.035em;text-transform:uppercase;margin-top:14px!important}
+.la__split{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
+.la__split--top{align-items:start}.la__split--top .la__img{position:sticky;top:40px}
+.la__img{background:var(--sand);aspect-ratio:4/5;overflow:hidden}
+.la__img img{width:100%;height:100%;object-fit:cover;display:block}
+.la__body p+p{margin-top:22px}
+.la__body .la__btn{margin-top:46px}
+.la__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:64px 80px;margin-top:20px}
+.la__item h3{font-size:22px;font-weight:600!important;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px;line-height:1.3}
+.la__item h3:before{content:"";display:block;width:40px;height:2px;background:var(--gold);margin-bottom:22px}
+.la__steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.la__steps li{counter-increment:s;display:grid;grid-template-columns:70px 1fr;padding:26px 0;border-bottom:1px solid var(--line)}
+.la__steps li:first-child{border-top:1px solid var(--line)}
+.la__steps li:before{content:"0" counter(s);font-family:'Bodoni Moda',serif;font-size:26px;color:var(--tan);line-height:1.3}
+.la__steps strong{display:block;font-size:18px;margin-bottom:4px}
+.la__note{margin-top:30px!important;font-size:15px}
+.la__band{padding:110px 0;text-align:center;background:var(--bg)}
+.la__band h2{font-size:44px;letter-spacing:.04em;text-transform:uppercase;line-height:1.25;max-width:820px;margin:0 auto 18px}
+.la__band p{font-size:19px;margin-bottom:44px!important}
+.la__band .la__rule{margin:0 auto 34px}
+.la__aside{background:var(--cream);padding:34px 0;text-align:center;font-size:16px}
+.la__aside a{color:var(--ink)!important;font-weight:500;border-bottom:2px solid var(--gold);margin-left:8px}
+.la__list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:52px 80px}
+.la__facts{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:80px;padding-top:44px;border-top:1px solid var(--line)}
+.la__facts h3,.la__card h3{font-size:15px;font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:10px}
+.la__facts p,.la__card p,.la__card a{color:var(--ink)!important;font-weight:400}
+.la__cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:64px}
+.la__card{border:1px solid var(--tan);padding:34px 30px;background:var(--bg)}
+.la__foot{background:var(--sand);padding:56px 0;font-size:14px;color:var(--text)}
+.la__foot .la__wrap{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+.la__foot-brand{font-family:'Bodoni Moda',serif;font-style:italic;font-size:30px;color:var(--ink);line-height:1}.la__foot-brand small{font-family:'Poppins',sans-serif;font-style:normal;font-size:11px;font-weight:500;letter-spacing:.45em;margin-left:10px}
+.la__foot nav{display:flex;gap:28px;flex-wrap:wrap}
+.la__foot a{color:var(--ink)!important}
+.la__foot a:hover{color:var(--tan)!important}
+
+.la__hello{font-family:'Bodoni Moda',serif;font-style:italic;font-size:30px!important;color:var(--ink)!important;margin-bottom:6px!important}
+.la__statement{font-size:20px!important;font-weight:400!important;color:var(--ink)!important;border-left:3px solid var(--gold);padding-left:18px;margin:18px 0 26px!important}
+.la__worlds{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.la__world{background:var(--bg);border:1px solid var(--line);padding:40px 38px}
+.la__wnum{display:block;font-family:'Bodoni Moda',serif;font-style:italic;font-size:26px;color:var(--gold);margin-bottom:12px}
+.la__world h3{font-size:22px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px}
+.la__realise{max-width:760px;margin:56px auto 0!important;text-align:center;font-family:'Bodoni Moda',serif;font-style:italic;font-size:24px!important;line-height:1.5;color:var(--ink)!important}
+.la__quote{background:var(--ink);padding:100px 0;text-align:center}
+.la__quote .la__rule{margin:0 auto 34px}
+.la__quote h2{color:#fff!important;font-size:44px;letter-spacing:.04em;text-transform:uppercase;line-height:1.2;margin-bottom:26px}
+.la__quote p{color:#D9D3C8!important;max-width:720px;margin:0 auto!important;font-size:18px}
+.la__intro{max-width:760px;font-size:19px!important;color:var(--ink)!important;margin:-8px 0 52px!important}
+@media (max-width:860px){
+ .la__worlds{grid-template-columns:1fr}
+ .la__world{padding:30px 24px}
+ .la__quote{padding:70px 0}
+ .la__quote h2{font-size:28px}
+ .la__realise{font-size:20px!important;margin-top:40px!important}
+ .la__split--top .la__img{position:static}
+ .la{font-size:16px}
+ .la__wrap{padding:0 22px}
+ .la__navin{padding:22px 0 16px;gap:16px}
+ .la__mono{font-size:42px}
+ .la__name{font-size:12px;letter-spacing:.4em}
+ .la__sub{font-size:8.5px;letter-spacing:.14em}
+ .la__menu{gap:22px;width:100%}
+ .la__menu a{font-size:14px}
+ .la__menu a.is-on:after{bottom:-18px;width:30px;height:3px}
+ .la__hero-in{padding:52px 0 64px}
+ .la__hero-grid{grid-template-columns:1fr;gap:44px}
+ .la__index{padding:30px 24px 26px}
+ .la__index li{font-size:18px}
+ .la__hero h1{font-size:36px;letter-spacing:.03em}
+ .la__hero p{font-size:18px}
+ .la__sec,.la__band{padding:70px 0}
+ .la__title,.la__band h2{font-size:29px;letter-spacing:.025em}
+ .la__split,.la__grid,.la__list,.la__facts,.la__cards{grid-template-columns:1fr}
+ .la__split{gap:48px}
+ .la__grid,.la__list{gap:44px}
+ .la__facts{gap:26px;margin-top:56px}
+ .la__btn{padding:17px 30px;font-size:13px}
+ .la__aside a{display:inline-block;margin:8px 0 0}
+}
+
+html{scroll-behavior:smooth}
+body{margin:0;background:#FCFAF6}
+.la__form{max-width:720px;margin-top:64px;display:grid;gap:18px}
+.la__form label{display:block;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--tan);margin-bottom:8px}
+.la__form input,.la__form select,.la__form textarea{width:100%;box-sizing:border-box;font:300 16px 'Poppins',sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);padding:14px 16px;border-radius:0}
+.la__form input:focus,.la__form select:focus,.la__form textarea:focus{outline:none;border-color:var(--tan)}
+.la__form textarea{min-height:150px;resize:vertical}
+.la__form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.la__form button{justify-self:start;cursor:pointer;font-family:'Poppins',sans-serif}
+.la__legal h2{font-size:22px!important;margin:40px 0 12px!important}
+@media (max-width:860px){.la__form .row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="la">
+  <header class="la__nav"><div class="la__wrap"><div class="la__navin">
+    <a class="la__logo" href="index.html"><span class="la__mono">Lou</span><span><span class="la__name">ASSISTS</span><span class="la__sub">Executive &amp; personal assistance</span></span></a>
+    <nav class="la__menu"><a href="index.html">Services</a><a href="about.html">About</a><a href="contact.html" class="is-on">Contact</a></nav>
+  </div></div></header>
+
+  <section class="la__sec" style="padding-bottom:64px"><div class="la__wrap">
+    <p class="la__eyebrow">Contact</p>
+    <h2 class="la__title">Tell me what's on your plate</h2>
+    <div class="la__rule"></div>
+    <p style="max-width:680px">Share what you need help with: a few hours a week, a one-off project, or a renovation you'd like someone to oversee. I'll reply within one working day. Prefer to talk? Book a free 20-minute call.</p>
+    <p style="margin-top:40px"><a class="la__btn" href="contact.html#form" target="_blank" rel="noopener">Book a free call</a></p>
+    <div class="la__cards">
+      <div class="la__card"><h3>Email</h3><a href="mailto:contact@louassists.com">contact@louassists.com</a></div>
+      <div class="la__card"><h3>Phone / WhatsApp</h3><a href="tel:+33675068667">+33 6 75 06 86 67</a></div>
+      <div class="la__card"><h3>Based</h3><p>Côte d'Azur · worldwide<br>French, English or Spanish</p></div>
+    </div>
+    <form id="form" class="la__form" action="https://formsubmit.co/contact@louassists.com" method="POST">
+      <input type="hidden" name="_subject" value="New enquiry from louassists.com">
+      <input type="hidden" name="_next" value="https://louassists.com/merci.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      <div class="row">
+        <div><label for="n">Name</label><input id="n" name="name" required></div>
+        <div><label for="e">Email</label><input id="e" type="email" name="email" required></div>
+      </div>
+      <div class="row">
+        <div><label for="w">Where are you based?</label><input id="w" name="location"></div>
+        <div><label for="h">How can I help?</label><select id="h" name="service">
+          <option>Executive assistance</option><option>Personal assistance</option><option>Admin &amp; paperwork</option>
+          <option>Property management &amp; renovations</option><option>Something else</option></select></div>
+      </div>
+      <div><label for="m">Tell me a little more</label><textarea id="m" name="message" required></textarea></div>
+      <button class="la__btn" type="submit">Send message</button>
+    </form>
+  </div></section>
+  <footer class="la__foot"><div class="la__wrap">
+    <span class="la__foot-brand">Lou<small>ASSISTS</small></span>
+    <nav><a href="index.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a></nav>
+    <span>© 2026 Lou Assists · Côte d'Azur &amp; worldwide</span>
+  </div></footer>
+</div>
+</body>
+</html>
