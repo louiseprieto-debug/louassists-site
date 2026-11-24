@@ -19,7 +19,7 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","serviceType":"Property management and renovation coordination","name":"Property & renovation management","provider":{"@type":"ProfessionalService","name":"Lou Assists","url":"https://louassists.com/","telephone":"+33675068667","email":"contact@louassists.com","address":{"@type":"PostalAddress","streetAddress":"Centre d'affaires Le Forum, 33 boulevard du Général Leclerc","postalCode":"06240","addressLocality":"Beausoleil","addressCountry":"FR"}},"areaServed":[{"@type":"Place","name":"Monaco"},{"@type":"Place","name":"Menton"},{"@type":"Place","name":"Nice"},{"@type":"Place","name":"Côte d'Azur"}],"availableLanguage":["fr","en","es"],"url":"https://louassists.com/property-management.html","offers":[{"@type":"Offer","name":"Single check visit","price":"60","priceCurrency":"EUR"},{"@type":"Offer","name":"Monthly plan, 1 day","price":"550","priceCurrency":"EUR"},{"@type":"Offer","name":"Monthly plan, 2 days","price":"1040","priceCurrency":"EUR"},{"@type":"Offer","name":"Monthly plan, 4 days","price":"1980","priceCurrency":"EUR"},{"@type":"Offer","name":"One-off day","price":"480","priceCurrency":"EUR"}]}
+{"@context":"https://schema.org","@type":"Service","serviceType":"Property management and renovation coordination","name":"Property & renovation management","provider":{"@type":"ProfessionalService","name":"Lou Assists","url":"https://louassists.com/","telephone":"+33675068667","email":"contact@louassists.com","address":{"@type":"PostalAddress","streetAddress":"Centre d'affaires Le Forum, 33 boulevard du Général Leclerc","postalCode":"06240","addressLocality":"Beausoleil","addressCountry":"FR"}},"areaServed":[{"@type":"Place","name":"Monaco"},{"@type":"Place","name":"Menton"},{"@type":"Place","name":"Nice"},{"@type":"Place","name":"Côte d'Azur"}],"availableLanguage":["fr","en","es"],"url":"https://louassists.com/property-management.html","offers":[{"@type":"Offer","name":"Check visit","price":"60","priceCurrency":"EUR"},{"@type":"Offer","name":"Care plan Essential, 8 hours a month","price":"550","priceCurrency":"EUR"},{"@type":"Offer","name":"Care plan Comfort, 16 hours a month","price":"1040","priceCurrency":"EUR"},{"@type":"Offer","name":"Care plan Full care, 32 hours a month","price":"1980","priceCurrency":"EUR"},{"@type":"Offer","name":"Renovation half day","price":"260","priceCurrency":"EUR"},{"@type":"Offer","name":"Renovation full day","price":"480","priceCurrency":"EUR"}]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -167,6 +167,23 @@ body{margin:0;background:#FCFAF6}
 .la__legal h2{font-size:22px!important;margin:40px 0 12px!important}
 @media (max-width:860px){.la__form .row{grid-template-columns:1fr}}
 
+.la__pgroup{margin-top:72px}
+.la__pgroup:first-of-type{margin-top:8px}
+.la__ptitle{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--tan);padding-bottom:16px;margin-bottom:18px}
+.la__ptitle span{font-family:'Bodoni Moda',serif;font-style:italic;font-size:30px;color:var(--gold);line-height:1}
+.la__ptitle h3{font-size:26px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;line-height:1.2}
+.la__pdesc{max-width:760px;font-size:18px;color:var(--ink);margin-bottom:30px!important}
+.la__pricing4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+.la__pricing4 .la__plan{padding:32px 24px 26px}
+.la__pricing4 .la__amt{font-size:44px}
+.la__unit{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--tan);margin-top:10px}
+.la__plan--feat .la__unit{color:#DDB053}
+.la__incl{margin-top:22px;border:1px solid var(--line);background:var(--bg);padding:22px 28px;font-size:15.5px;line-height:1.7}
+.la__incl strong{font-weight:500;display:block;margin-bottom:4px;color:var(--ink)}
+.la__start{margin-top:52px;text-align:center;font-size:18px;color:var(--ink)}
+@media (max-width:1100px){.la__pricing4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){.la__pricing4{grid-template-columns:1fr}.la__ptitle h3{font-size:21px}.la__pgroup{margin-top:56px}}
+
 /* property landing */
 .la__hero--plain{background:var(--cream)}
 .la__hero--plain:before{display:none}
@@ -237,9 +254,9 @@ body{margin:0;background:#FCFAF6}
       </div>
       <aside class="la__index">
         <h2>Pricing at a glance</h2>
-        <div class="la__pt"><b>Check visit · €60</b><span>Up to 1 hour, photo report included</span></div>
-        <div class="la__pt"><b>Monthly plan · from €550</b><span>1 day a month, plus travel</span></div>
-        <div class="la__pt"><b>One-off day · €480</b><span>8 hours, no commitment</span></div>
+        <div class="la__pt"><b>Check visit · €60</b><span>One visit, photo report included</span></div>
+        <div class="la__pt"><b>Care plans · from €550 / month</b><span>Ongoing oversight of your property</span></div>
+        <div class="la__pt"><b>Renovation support · from €260</b><span>By the half day, the day or a monthly works plan</span></div>
         <p>Prices in euros, excluding VAT</p>
       </aside>
     </div></div>
@@ -278,59 +295,104 @@ body{margin:0;background:#FCFAF6}
 
   <section class="la__sec la__sec--cream" id="pricing"><div class="la__wrap">
     <p class="la__eyebrow">Pricing</p>
-    <h2 class="la__title">Clear prices, no surprises</h2>
+    <h2 class="la__title">Two services, two simple price lists</h2>
     <div class="la__rule"></div>
-    <p class="la__intro">Pick a single visit, a day of work, or a monthly plan for ongoing oversight. All prices are in euros, excluding VAT, and one day is 8 hours.</p>
-    <div class="la__pricing">
-      <div class="la__plan">
-        <h3>Check visit</h3>
-        <div class="la__amt">€60<small>per visit</small></div>
-        <p>A single visit of up to 1 hour within 20 km, with a photo report. No commitment.</p>
-        <p class="la__pnote">Good for a one-off look before a stay, after a storm, or to check on a delivery.</p>
+    <p class="la__intro">Choose the one that matches what you need. Every price is in euros, excluding VAT, and every visit comes with photos so you always know exactly what I saw.</p>
+
+    <div class="la__pgroup" id="oversight">
+      <div class="la__ptitle"><span>01</span><h3>Property oversight</h3></div>
+      <p class="la__pdesc">For a home you do not live in all year. Start with a single visit, or put me on call every month so nothing is left to chance.</p>
+      <div class="la__pricing4">
+        <div class="la__plan">
+          <h3>Check visit</h3>
+          <div class="la__amt">€60</div>
+          <div class="la__unit">per visit</div>
+          <p>One visit of up to 1 hour within 20 km, with a photo report. No commitment.</p>
+          <p class="la__pnote">Suits: a look before you arrive, after a storm, or before a delivery.</p>
+        </div>
+        <div class="la__plan">
+          <h3>Essential</h3>
+          <div class="la__amt">€550</div>
+          <div class="la__unit">a month · 8 hours</div>
+          <p>8 hours of my time every month, used however your property needs it.</p>
+          <p class="la__pnote">Suits: a holiday home you use a few times a year.</p>
+        </div>
+        <div class="la__plan la__plan--feat">
+          <span class="la__badge">Recommended</span>
+          <h3>Comfort</h3>
+          <div class="la__amt">€1,040</div>
+          <div class="la__unit">a month · 16 hours</div>
+          <p>16 hours a month, so regular visits and upkeep are covered with room to spare.</p>
+          <p class="la__pnote">Suits: a home you use through the season, with suppliers to manage.</p>
+        </div>
+        <div class="la__plan">
+          <h3>Full care</h3>
+          <div class="la__amt">€1,980</div>
+          <div class="la__unit">a month · 32 hours</div>
+          <p>32 hours a month for a larger property, or one you rarely get to see.</p>
+          <p class="la__pnote">Suits: a bigger estate, several suppliers, or owners far away.</p>
+        </div>
       </div>
-      <div class="la__plan la__plan--feat">
-        <span class="la__badge">Best for ongoing care</span>
-        <h3>Monthly plan</h3>
-        <div class="la__amt">€550<small>a month</small></div>
-        <p>Hours spread across the month, quick replies and priority when something is urgent.</p>
-        <ul>
-          <li><span>1 day a month</span><b>€550</b></li>
-          <li><span>2 days a month</span><b>€1,040</b></li>
-          <li><span>4 days a month</span><b>€1,980</b></li>
-        </ul>
-        <p class="la__pnote">The more days, the lower the daily rate. Travel is billed in addition.</p>
+      <div class="la__incl"><strong>Every care plan includes</strong>Regular check visits with a photo report, key holding and access for cleaners and technicians, booking and supervising maintenance, preparing the property for your arrival, and a same-day reply on working days. Travel is billed in addition.</div>
+    </div>
+
+    <div class="la__pgroup" id="renovation">
+      <div class="la__ptitle"><span>02</span><h3>Renovation coordination</h3></div>
+      <p class="la__pdesc">For works that need someone on site. Book a day when you need one, or a monthly works plan to keep the project moving from first quote to handover.</p>
+      <div class="la__pricing4">
+        <div class="la__plan">
+          <h3>Half day</h3>
+          <div class="la__amt">€260</div>
+          <div class="la__unit">4 hours</div>
+          <p>A focused session: a site visit, a meeting with an artisan, or a check on a snag.</p>
+          <p class="la__pnote">No commitment.</p>
+        </div>
+        <div class="la__plan">
+          <h3>Full day</h3>
+          <div class="la__amt">€480</div>
+          <div class="la__unit">8 hours</div>
+          <p>A full day of work: comparing quotes, planning the works, or a day on site with a photo and video report.</p>
+          <p class="la__pnote">No commitment.</p>
+        </div>
+        <div class="la__plan la__plan--feat">
+          <span class="la__badge">Recommended</span>
+          <h3>Works plan</h3>
+          <div class="la__amt">€1,040</div>
+          <div class="la__unit">a month · 2 days</div>
+          <p>Two days a month, spread as the works need, with a shared schedule and a quick reply when something comes up.</p>
+          <p class="la__pnote">Suits: a renovation running over several months.</p>
+        </div>
+        <div class="la__plan">
+          <h3>Works plan +</h3>
+          <div class="la__amt">€1,980</div>
+          <div class="la__unit">a month · 4 days</div>
+          <p>Four days a month for a busy site: several trades, tight deadlines, or a larger budget to watch.</p>
+          <p class="la__pnote">Suits: a full renovation or a property being prepared for a deadline.</p>
+        </div>
       </div>
-      <div class="la__plan">
-        <h3>One-off day</h3>
-        <div class="la__amt">€480<small>per day</small></div>
-        <p>A scheduled day of work on agreed tasks, such as a renovation visit, a handover or a seasonal opening.</p>
-        <ul>
-          <li><span>Half day (4 h)</span><b>€260</b></li>
-          <li><span>Hourly rate</span><b>€65</b></li>
-        </ul>
-        <p class="la__pnote">Minimum booking: 2 hours.</p>
-      </div>
+      <div class="la__incl"><strong>Every renovation booking includes</strong>Finding artisans and comparing quotes, planning the works with a shared schedule, site visits with photo and video reports, and follow-up on delays, budget and snags until handover. Travel is billed in addition.</div>
     </div>
 
     <div class="la__terms">
       <div>
         <h3>How it works</h3>
         <ul>
-          <li><strong>Monthly plan:</strong> 3 months minimum, then 1 month's notice. Paid in advance at the start of each month. Unused hours carry over for 1 month. Same-day reply on working days.</li>
-          <li><strong>One-off work:</strong> no commitment. 50% on booking and the balance on completion, or payment on completion for small jobs. Reply within 1 working day.</li>
+          <li><strong>Monthly plans:</strong> 3 months minimum, then 1 month's notice. Paid in advance at the start of each month. Unused hours carry over for 1 month.</li>
+          <li><strong>Visits and days:</strong> no commitment. 50% on booking and the balance on completion, or payment on completion for small jobs. Reply within 1 working day. Any other work is billed at €65 an hour, 2 hours minimum.</li>
         </ul>
       </div>
       <div>
         <h3>Extras</h3>
         <ul>
-          <li><strong>Extra hours</strong> beyond your plan: the hourly rate, agreed before use</li>
+          <li><strong>Extra hours</strong> beyond your plan: €65 an hour, agreed before use</li>
           <li><strong>Urgent work</strong> (same day, evenings, weekends): +25%</li>
           <li><strong>Travel:</strong> free within 15 km of Beausoleil. Beyond that, €0.60 per km, or a flat €25 per trip in the Monaco to Nice area</li>
           <li><strong>Expenses</strong> paid on your behalf are billed at cost, with receipts</li>
         </ul>
       </div>
     </div>
-    <p class="la__fine">Not included: rental management (collecting rents, managing leases), architectural design, and legal or accounting advice.</p>
+    <p class="la__fine">Not included: rental management (collecting rents, managing leases), architectural design or acting as project engineer (maître d'œuvre), and legal or accounting advice.</p>
+    <p class="la__start">Not sure which one fits? Book a free 20-minute call. I will tell you honestly what makes sense, even if that is a single visit.<br><br><a class="la__btn la__btn--solid" href="contact.html">Book a free call</a></p>
   </div></section>
 
   <section class="la__sec"><div class="la__wrap la__split">
